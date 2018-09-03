@@ -1,0 +1,14 @@
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\Bin\Debug\SilverlightApplication1.dll
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\Bin\Debug\SilverlightApplication1.pdb
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\Bin\Debug\SilverlightApplication1.xml
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\Bin\Debug\AppManifest.xaml
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\Bin\Debug\SilverlightApplication1.xap
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\Bin\Debug\TestPage.html
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\obj\Debug\App.g.vb
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\obj\Debug\MainPage.g.vb
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\obj\Debug\SilverlightApplication1.g.resources
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\obj\Debug\SilverlightApplication1.dll
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\obj\Debug\SilverlightApplication1.xml
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\obj\Debug\SilverlightApplication1.pdb
+C:\Documents and Settings\capacitacion\Mis documentos\Visual Studio 2010\Projects\PronosticosSAP\HelpPronosticos\SilverlightApplication1\SilverlightApplication1\obj\Debug\XapCacheFile.xml

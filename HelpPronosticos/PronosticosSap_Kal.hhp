@@ -1,0 +1,48 @@
+
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=PronosticosSap_Kal.chm
+Contents file=PronosticosSap_Kal.hhc
+Default Font=Arial, 9, 000
+Default topic=PasosImplementacion.html
+Display compile progress=Yes
+Error log file=PronosticosSap_Kal.log.txt
+Full-text search=Yes
+Index file=PronosticosSap_Kal.hhk
+Language=0x80a Español (México)
+Title=Title
+
+
+[FILES]
+PasosImplementacion.html
+Importacion_Archivos.html
+Layout_pronosticos.html
+Layout_Agentes_Clientes.html
+Layout_plan.html
+PronosticoDetalle.html
+BuscarPronosticos.html
+PronosticoMaestro.html
+Envios.html
+SincronizarProductos.html
+ClientesAgentes.html
+SincronizarClientes.html
+AddDistribuidor.htm
+
+[ALIAS]
+AddDistribuidor=AddDistribuidor.htm ; Agregar un distribuidor
+ClientesAgentes=ClientesAgentes.html
+Importar_Archivos=Importacion_Archivos.html
+Importar_Clientes=Layout_Agentes_Clientes.html ; Importar Clientes Industriales
+Importar_Plan=Layout_plan.html
+Importar_Pronostico=Layout_pronosticos.html ; Importar pronosticos de años anteriores
+Pasos_de_Implementacion=PasosImplementacion.html
+PronosticoDetalle=PronosticoDetalle.html
+PronosticoMaestro=PronosticoMaestro.html
+SincronizarClientes=SincronizarClientes.html
+SincronizarProductos=SincronizarProductos.html
+
+[MAP]
+#include SigeproTopics.h
+
+[INFOTYPES]
+

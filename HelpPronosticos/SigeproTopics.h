@@ -1,0 +1,12 @@
+#define Pasos_de_Implementacion	1000
+#define Importar_Archivos	10000
+#define Importar_Clientes	10100
+#define Importar_Plan		10200
+#define Importar_Pronostico	10300
+#define PronosticoMaestro	20100
+#define PronosticoDetalle	20200
+#define ClientesAgentes		30100
+#define SincronizarClientes	30200
+#define AddDistribuidor	30300
+#define ClientesAgentes	40100
+#define SincronizarProductos	40100

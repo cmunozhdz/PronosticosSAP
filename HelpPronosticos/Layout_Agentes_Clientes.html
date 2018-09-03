@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.0 transitional//EN">
+<HTML>
+<HEAD>
+	
+	<title>Importar Clientes</title>
+	<meta name="GENERATOR" content="OpenOffice.org 3.2  (Win32)">
+	<meta name="CREATED" content="0;0">
+	<meta name="CHANGED" content="20130806;11383800">
+	<meta name="KEYWORDS" content="Layout de Agentes">
+	<link rel="stylesheet" type="text/css" href="theme.css">
+    </HEAD>
+<BODY LANG="es-MX" DIR="Ltr">
+<div id="masthead" ><img src="Images/BannerSigepro.png" alt="SiGePro"></div>
+<div id="container" >
+<H1> Importar pron&oacute;sticos del a&ntilde;o en curso desde un archivo de Excel.</H1>
+<OL>
+	<LI><P>Generar un archivo de texto .csv donde las columnas sean	separadas por tabuladores, estos archivos pueden generarse desde excel o programas similares.</P></LI> 
+	<LI><P>A continuaci&oacute;n se indica el layout del pron&oacute;stico.</P></LI> 
+</OL>
+<table  cellspacing="0"  >
+	
+	<tr><th class= "Hdr" colspan="0" > Campo</th><th class= "Hdr" width="600" >Descripci&oacute;n.</th><th width="150" class= "Hdr">Tipo de campo.</th></tr>
+	<tr><td class= "Line" colspan="0" > Sociedad</td><td class= "Line">
+        Indica la sociedad de ventas a pronosticar.<br />
+        Los valores validos son:<br />
+        1000: Polaquimia<br />
+        2000:Dr, Jos&eacute; Polak </td><td class= "Line">Cadenas de Texto</td></tr>
+    <tr><td class= "Line2" colspan="0" > Cliente</td><td class= "Line2">
+        Clave del cliente al cliente.</td><td class= "Line2">Cadenas de Texto</td></tr>
+	
+    <tr><td class= "Line" colspan="0" > Agente</td><td class= "Line">
+        Clave del agente de ventas responsable</td><td class= "Line">Cadenas de Texto</td></tr>
+	
+    <tr><td class= "Line2" colspan="0" > Producto</td><td class= "Line2">
+        Clave del producto</td><td class= "Line2">Cadenas de Texto</td></tr>
+	
+    <tr><td class= "Line" colspan="0" > Centro</td><td class= "Line">
+        Clave del centro suministrador 
+        (validar con el responsable del maestro de materiales).<br />
+        Ejemplo:<br />
+        1000:Planta Tlaxcala</td><td class= "Line">&nbsp;</td></tr>
+	
+    <tr><td class= "Line2" colspan="0" > Vigencia</td><td class= "Line2">
+        Indicar la fecha hasta la cual el producto es vigente para pron&oacute;stico; esto 
+        quiere decir que un producto dejar&aacute; de formar parte de un pron&oacute;stico nuevo a 
+        partir de la fecha indicada.</td><td class= "Line2">Cadena de Texto Formato: <br /> 
+            dd-mm-aaaa</td></tr>
+	
+</table>
+
+    <p>Nota:&nbsp;&nbsp;</p>
+    <p>Las claves anteriores deben existir en SAP por lo que se deben ejecutar los procesos de sincronizaci&oacute;n de datos de clientes y productos antes de ejecutar este proceso.</p>
+</div>
+</BODY>
+</HTML>

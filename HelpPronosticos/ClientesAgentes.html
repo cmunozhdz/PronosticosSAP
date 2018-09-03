@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="es-mx" http-equiv="Content-Language" />
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+<meta name="KEYWORDS" content="Clientes Asignados al agente"  />
+<meta content="Define el catalogo de clientes asignados" name="description" />
+<link href="theme.css" rel="stylesheet" type="text/css" />
+<title>Clientes X Agente</title>
+</head>
+
+<body>
+<div id="masthead" ><img src="Images/BannerSigepro.png" alt="SiGePro"></div>
+<div id="container" >
+<h2>Objetivo:</h2>
+<p>Asignar los clientes y productos que van a ser pronosticados por el agente de ventas</p>
+
+<h1>Consideraciones:</h1>
+<p>Permite llevar un control del pron&oacute;stico de ventas a nivel de clientes y productos 
+    que apliquen al centro y area de ventas. </p>
+<h1>Procedimiento:</h1>
+
+<h3>Asignar productos a clientes asignados:</h3>
+
+<ol>
+	<li>Indique la clave del agente a actualizar; si lo desconoce por favor dar clic en el boton <a href="BuscarPronosticos.html">
+	<img class="auto-style1" height="16"    src="./Images/buscar.png" width="16" alt= "BuscarPronosticos.html"></a> que se encuentra a la derecha.
+    </li> 
+	<li>Dar click en el boton <img src="Images/folder.png"  alt="Consultar Clientes Asignados" /></li>
+	<li>Seleccione el cliente y sociedad a actualizar. (En caso de que el cliente y sociedad no existan <a href="SincronizarClientes.html">intente sincronizar los cliente con SAP).</a></li>
+    <li>En la pestaña <strong>Clientes </strong>observará una pantalla como la 
+        siguiente<strong>:</strong></li>
+
+</ol>
+    <p style="text-align: center">
+        <img alt="" src="Images/ClienteAgente.png" /></p>
+    <p>
+        En donde las columnas tienen el siguiente siginificado:</p>
+    <p>
+        <strong>SOCIEDAD</strong>: Indica la sociedad de ventas aplicable.</p>
+    <p>
+        <strong>CLAVE</strong>:Indica la clave del cliente asignado en SAP</p>
+    <p>
+        <strong>Raz&oacute;n Social:</strong> Indica el nombre comercial o raz&oacute;n social del cliente indicado.</p>
+    <p>
+        <strong>Vigencia </strong>:Indica la fecha en la cual el cliente ya no es parte 
+        de la cartera del vendedor; el sistema actualiza este dato al sincronizar los 
+        clientes en SAP.</p>
+    <p>
+        <strong>Vigencia</strong> es de especial importancia ya que este dato se 
+            actualiza durante el proceso de sincronizaci&oacute;n y ocurre cada vez que un cliente 
+            es asignado o eliminado en SAP,</p>
+    <p>
+        En la pestaña de Productos X Cliente como la siguiente se deben definir los productos que desea 
+        asignar,</p>
+    <img src="Images/ProductoCteVigencia.png" />
+    <p>
+        &nbsp;considerando el centro suministrador.y la vigencia del producto-cliente 
+        asignado ya que un producto dejará de existir en los pronosticos nuevos una vez 
+        que se venza la caducidad como se indica a continuacion.</p>
+    <p>
+        <br />
+    </p>
+    <p>
+        Notas:No olvide guardar sus cambios antes de cambiar de cliente.<br>En caso de que el producto no aparezca debe validarse primero en SAP utilizando la transaccion MM03 y si existe entonces debe ejecutar la 
+        <a href="SincronizarProductos.html" >Sincronizaci&oacute;n de productos con SAP</a>
+    </p>
+</div>
+</body>
+
+</html>

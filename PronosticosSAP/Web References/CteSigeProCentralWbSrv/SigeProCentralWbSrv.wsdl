@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ValidaUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pstrUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStrPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidaUsuarioResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArchivosProcesados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pstrFileName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaIni" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaFin" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCveAgente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pListaStatus" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArchivosProcesadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArchivosProcesadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstadoWs">
+        <s:complexType />
+      </s:element>
+      <s:element name="EstadoWsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EstadoWsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsAgentes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClaveAgente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsAgentesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDsAgentesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsEstatusAnualEnvio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Negocio" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Anio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsEstatusAnualEnvioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDsEstatusAnualEnvioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDesContenidoFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pstrFileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDesContenidoFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDesContenidoFileResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsPronosticoXAgentePeriodo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pAgente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFecha" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsPronosticoXAgentePeriodoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDsPronosticoXAgentePeriodoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGetDsPronosticosXDivision">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Anio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Division" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProductoActivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGetDsPronosticosXDivisionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FnGetDsPronosticosXDivisionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGuardaPronosticoXDivision">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Division" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Anio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Periodo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Centro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Producto" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Cantidad" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGuardaPronosticoXDivisionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FnGuardaPronosticoXDivisionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGetDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="FnGetDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FnGetDateResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsNegociosAsignados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pstrUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsNegociosAsignadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDsNegociosAsignadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsPeriodosXDivision">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Anio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Division" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsPeriodosXDivisionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDsPeriodosXDivisionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsPermisos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pstrUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStrObjectId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStrActividad" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsPermisosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDsPermisosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGuardaEstadoPeriodo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Division" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Anio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="lstPeriodos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StatusAnterior" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGuardaEstadoPeriodoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FnGuardaEstadoPeriodoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsMovsPronosticosXDivision">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Anio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Periodo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Centro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Producto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Division" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDsMovsPronosticosXDivisionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDsMovsPronosticosXDivisionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnSendMail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pstrDestinatario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrSubject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrMensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnSendMailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FnSendMailResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pIdAgente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFecha" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGetDsSapPRODUCTOS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClaveProducto" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Negocio" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Registro" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGetDsSapPRODUCTOSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FnGetDsSapPRODUCTOSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGetDsSapExistencias">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pListaNomaterial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pListaCentro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pListaAlmacen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pListaLotes" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGetDsSapExistenciasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FnGetDsSapExistenciasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGetDsMensajes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pUser" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FnGetDsMensajesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FnGetDsMensajesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVtasXAgenteMes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAnio" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMes" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCentros" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMaterial" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pAgente" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVtasXAgenteMesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVtasXAgenteMesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidaUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidaUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ValidaUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidaUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArchivosProcesadosSoapIn">
+    <wsdl:part name="parameters" element="tns:ArchivosProcesados" />
+  </wsdl:message>
+  <wsdl:message name="ArchivosProcesadosSoapOut">
+    <wsdl:part name="parameters" element="tns:ArchivosProcesadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="EstadoWsSoapIn">
+    <wsdl:part name="parameters" element="tns:EstadoWs" />
+  </wsdl:message>
+  <wsdl:message name="EstadoWsSoapOut">
+    <wsdl:part name="parameters" element="tns:EstadoWsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDsAgentesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDsAgentes" />
+  </wsdl:message>
+  <wsdl:message name="GetDsAgentesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDsAgentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDsEstatusAnualEnvioSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDsEstatusAnualEnvio" />
+  </wsdl:message>
+  <wsdl:message name="GetDsEstatusAnualEnvioSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDsEstatusAnualEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDesContenidoFileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDesContenidoFile" />
+  </wsdl:message>
+  <wsdl:message name="GetDesContenidoFileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDesContenidoFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDsPronosticoXAgentePeriodoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDsPronosticoXAgentePeriodo" />
+  </wsdl:message>
+  <wsdl:message name="GetDsPronosticoXAgentePeriodoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDsPronosticoXAgentePeriodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FnGetDsPronosticosXDivisionSoapIn">
+    <wsdl:part name="parameters" element="tns:FnGetDsPronosticosXDivision" />
+  </wsdl:message>
+  <wsdl:message name="FnGetDsPronosticosXDivisionSoapOut">
+    <wsdl:part name="parameters" element="tns:FnGetDsPronosticosXDivisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FnGuardaPronosticoXDivisionSoapIn">
+    <wsdl:part name="parameters" element="tns:FnGuardaPronosticoXDivision" />
+  </wsdl:message>
+  <wsdl:message name="FnGuardaPronosticoXDivisionSoapOut">
+    <wsdl:part name="parameters" element="tns:FnGuardaPronosticoXDivisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FnGetDateSoapIn">
+    <wsdl:part name="parameters" element="tns:FnGetDate" />
+  </wsdl:message>
+  <wsdl:message name="FnGetDateSoapOut">
+    <wsdl:part name="parameters" element="tns:FnGetDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDsNegociosAsignadosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDsNegociosAsignados" />
+  </wsdl:message>
+  <wsdl:message name="GetDsNegociosAsignadosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDsNegociosAsignadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDsPeriodosXDivisionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDsPeriodosXDivision" />
+  </wsdl:message>
+  <wsdl:message name="GetDsPeriodosXDivisionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDsPeriodosXDivisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDsPermisosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDsPermisos" />
+  </wsdl:message>
+  <wsdl:message name="GetDsPermisosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDsPermisosResponse" />
+  </wsdl:message>
+  <wsdl:message name="FnGuardaEstadoPeriodoSoapIn">
+    <wsdl:part name="parameters" element="tns:FnGuardaEstadoPeriodo" />
+  </wsdl:message>
+  <wsdl:message name="FnGuardaEstadoPeriodoSoapOut">
+    <wsdl:part name="parameters" element="tns:FnGuardaEstadoPeriodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDsMovsPronosticosXDivisionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDsMovsPronosticosXDivision" />
+  </wsdl:message>
+  <wsdl:message name="GetDsMovsPronosticosXDivisionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDsMovsPronosticosXDivisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FnSendMailSoapIn">
+    <wsdl:part name="parameters" element="tns:FnSendMail" />
+  </wsdl:message>
+  <wsdl:message name="FnSendMailSoapOut">
+    <wsdl:part name="parameters" element="tns:FnSendMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientes" />
+  </wsdl:message>
+  <wsdl:message name="GetClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="FnGetDsSapPRODUCTOSSoapIn">
+    <wsdl:part name="parameters" element="tns:FnGetDsSapPRODUCTOS" />
+  </wsdl:message>
+  <wsdl:message name="FnGetDsSapPRODUCTOSSoapOut">
+    <wsdl:part name="parameters" element="tns:FnGetDsSapPRODUCTOSResponse" />
+  </wsdl:message>
+  <wsdl:message name="FnGetDsSapExistenciasSoapIn">
+    <wsdl:part name="parameters" element="tns:FnGetDsSapExistencias" />
+  </wsdl:message>
+  <wsdl:message name="FnGetDsSapExistenciasSoapOut">
+    <wsdl:part name="parameters" element="tns:FnGetDsSapExistenciasResponse" />
+  </wsdl:message>
+  <wsdl:message name="FnGetDsMensajesSoapIn">
+    <wsdl:part name="parameters" element="tns:FnGetDsMensajes" />
+  </wsdl:message>
+  <wsdl:message name="FnGetDsMensajesSoapOut">
+    <wsdl:part name="parameters" element="tns:FnGetDsMensajesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVtasXAgenteMesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVtasXAgenteMes" />
+  </wsdl:message>
+  <wsdl:message name="GetVtasXAgenteMesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVtasXAgenteMesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SigeProCentralWbSrvSoap">
+    <wsdl:operation name="ValidaUsuario">
+      <wsdl:input message="tns:ValidaUsuarioSoapIn" />
+      <wsdl:output message="tns:ValidaUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ArchivosProcesados">
+      <wsdl:input message="tns:ArchivosProcesadosSoapIn" />
+      <wsdl:output message="tns:ArchivosProcesadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EstadoWs">
+      <wsdl:input message="tns:EstadoWsSoapIn" />
+      <wsdl:output message="tns:EstadoWsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDsAgentes">
+      <wsdl:input message="tns:GetDsAgentesSoapIn" />
+      <wsdl:output message="tns:GetDsAgentesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDsEstatusAnualEnvio">
+      <wsdl:input message="tns:GetDsEstatusAnualEnvioSoapIn" />
+      <wsdl:output message="tns:GetDsEstatusAnualEnvioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDesContenidoFile">
+      <wsdl:input message="tns:GetDesContenidoFileSoapIn" />
+      <wsdl:output message="tns:GetDesContenidoFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDsPronosticoXAgentePeriodo">
+      <wsdl:input message="tns:GetDsPronosticoXAgentePeriodoSoapIn" />
+      <wsdl:output message="tns:GetDsPronosticoXAgentePeriodoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsPronosticosXDivision">
+      <wsdl:input message="tns:FnGetDsPronosticosXDivisionSoapIn" />
+      <wsdl:output message="tns:FnGetDsPronosticosXDivisionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FnGuardaPronosticoXDivision">
+      <wsdl:input message="tns:FnGuardaPronosticoXDivisionSoapIn" />
+      <wsdl:output message="tns:FnGuardaPronosticoXDivisionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDate">
+      <wsdl:input message="tns:FnGetDateSoapIn" />
+      <wsdl:output message="tns:FnGetDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDsNegociosAsignados">
+      <wsdl:input message="tns:GetDsNegociosAsignadosSoapIn" />
+      <wsdl:output message="tns:GetDsNegociosAsignadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDsPeriodosXDivision">
+      <wsdl:input message="tns:GetDsPeriodosXDivisionSoapIn" />
+      <wsdl:output message="tns:GetDsPeriodosXDivisionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDsPermisos">
+      <wsdl:input message="tns:GetDsPermisosSoapIn" />
+      <wsdl:output message="tns:GetDsPermisosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FnGuardaEstadoPeriodo">
+      <wsdl:input message="tns:FnGuardaEstadoPeriodoSoapIn" />
+      <wsdl:output message="tns:FnGuardaEstadoPeriodoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDsMovsPronosticosXDivision">
+      <wsdl:input message="tns:GetDsMovsPronosticosXDivisionSoapIn" />
+      <wsdl:output message="tns:GetDsMovsPronosticosXDivisionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FnSendMail">
+      <wsdl:input message="tns:FnSendMailSoapIn" />
+      <wsdl:output message="tns:FnSendMailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientes">
+      <wsdl:input message="tns:GetClientesSoapIn" />
+      <wsdl:output message="tns:GetClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsSapPRODUCTOS">
+      <wsdl:input message="tns:FnGetDsSapPRODUCTOSSoapIn" />
+      <wsdl:output message="tns:FnGetDsSapPRODUCTOSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsSapExistencias">
+      <wsdl:input message="tns:FnGetDsSapExistenciasSoapIn" />
+      <wsdl:output message="tns:FnGetDsSapExistenciasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsMensajes">
+      <wsdl:input message="tns:FnGetDsMensajesSoapIn" />
+      <wsdl:output message="tns:FnGetDsMensajesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVtasXAgenteMes">
+      <wsdl:input message="tns:GetVtasXAgenteMesSoapIn" />
+      <wsdl:output message="tns:GetVtasXAgenteMesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SigeProCentralWbSrvSoap" type="tns:SigeProCentralWbSrvSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidaUsuario">
+      <soap:operation soapAction="http://tempuri.org/ValidaUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArchivosProcesados">
+      <soap:operation soapAction="http://tempuri.org/ArchivosProcesados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstadoWs">
+      <soap:operation soapAction="http://tempuri.org/EstadoWs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsAgentes">
+      <soap:operation soapAction="http://tempuri.org/GetDsAgentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsEstatusAnualEnvio">
+      <soap:operation soapAction="http://tempuri.org/GetDsEstatusAnualEnvio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesContenidoFile">
+      <soap:operation soapAction="http://tempuri.org/GetDesContenidoFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsPronosticoXAgentePeriodo">
+      <soap:operation soapAction="http://tempuri.org/GetDsPronosticoXAgentePeriodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsPronosticosXDivision">
+      <soap:operation soapAction="http://tempuri.org/FnGetDsPronosticosXDivision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGuardaPronosticoXDivision">
+      <soap:operation soapAction="http://tempuri.org/FnGuardaPronosticoXDivision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDate">
+      <soap:operation soapAction="http://tempuri.org/FnGetDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsNegociosAsignados">
+      <soap:operation soapAction="http://tempuri.org/GetDsNegociosAsignados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsPeriodosXDivision">
+      <soap:operation soapAction="http://tempuri.org/GetDsPeriodosXDivision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsPermisos">
+      <soap:operation soapAction="http://tempuri.org/GetDsPermisos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGuardaEstadoPeriodo">
+      <soap:operation soapAction="http://tempuri.org/FnGuardaEstadoPeriodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsMovsPronosticosXDivision">
+      <soap:operation soapAction="http://tempuri.org/GetDsMovsPronosticosXDivision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnSendMail">
+      <soap:operation soapAction="http://tempuri.org/FnSendMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientes">
+      <soap:operation soapAction="http://tempuri.org/GetClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsSapPRODUCTOS">
+      <soap:operation soapAction="http://tempuri.org/FnGetDsSapPRODUCTOS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsSapExistencias">
+      <soap:operation soapAction="http://tempuri.org/FnGetDsSapExistencias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsMensajes">
+      <soap:operation soapAction="http://tempuri.org/FnGetDsMensajes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVtasXAgenteMes">
+      <soap:operation soapAction="http://tempuri.org/GetVtasXAgenteMes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SigeProCentralWbSrvSoap12" type="tns:SigeProCentralWbSrvSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidaUsuario">
+      <soap12:operation soapAction="http://tempuri.org/ValidaUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArchivosProcesados">
+      <soap12:operation soapAction="http://tempuri.org/ArchivosProcesados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstadoWs">
+      <soap12:operation soapAction="http://tempuri.org/EstadoWs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsAgentes">
+      <soap12:operation soapAction="http://tempuri.org/GetDsAgentes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsEstatusAnualEnvio">
+      <soap12:operation soapAction="http://tempuri.org/GetDsEstatusAnualEnvio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesContenidoFile">
+      <soap12:operation soapAction="http://tempuri.org/GetDesContenidoFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsPronosticoXAgentePeriodo">
+      <soap12:operation soapAction="http://tempuri.org/GetDsPronosticoXAgentePeriodo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsPronosticosXDivision">
+      <soap12:operation soapAction="http://tempuri.org/FnGetDsPronosticosXDivision" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGuardaPronosticoXDivision">
+      <soap12:operation soapAction="http://tempuri.org/FnGuardaPronosticoXDivision" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDate">
+      <soap12:operation soapAction="http://tempuri.org/FnGetDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsNegociosAsignados">
+      <soap12:operation soapAction="http://tempuri.org/GetDsNegociosAsignados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsPeriodosXDivision">
+      <soap12:operation soapAction="http://tempuri.org/GetDsPeriodosXDivision" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsPermisos">
+      <soap12:operation soapAction="http://tempuri.org/GetDsPermisos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGuardaEstadoPeriodo">
+      <soap12:operation soapAction="http://tempuri.org/FnGuardaEstadoPeriodo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDsMovsPronosticosXDivision">
+      <soap12:operation soapAction="http://tempuri.org/GetDsMovsPronosticosXDivision" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnSendMail">
+      <soap12:operation soapAction="http://tempuri.org/FnSendMail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientes">
+      <soap12:operation soapAction="http://tempuri.org/GetClientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsSapPRODUCTOS">
+      <soap12:operation soapAction="http://tempuri.org/FnGetDsSapPRODUCTOS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsSapExistencias">
+      <soap12:operation soapAction="http://tempuri.org/FnGetDsSapExistencias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FnGetDsMensajes">
+      <soap12:operation soapAction="http://tempuri.org/FnGetDsMensajes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVtasXAgenteMes">
+      <soap12:operation soapAction="http://tempuri.org/GetVtasXAgenteMes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SigeProCentralWbSrv">
+    <wsdl:port name="SigeProCentralWbSrvSoap" binding="tns:SigeProCentralWbSrvSoap">
+      <soap:address location="http://forecastsap.polakgrupo.com:2013/SapForecast/SigeProCentralWbSrv.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SigeProCentralWbSrvSoap12" binding="tns:SigeProCentralWbSrvSoap12">
+      <soap12:address location="http://forecastsap.polakgrupo.com:2013/SapForecast/SigeProCentralWbSrv.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

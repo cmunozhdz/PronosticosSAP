@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4268EA7-370C-449E-8C7E-85F5F9CE0DAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PronosticosSAP.My.MyApplication</StartupObject>
+    <RootNamespace>PronosticosSAP</RootNamespace>
+    <AssemblyName>PronosticosSAP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>\\192.168.2.22\wwwroot\SiproInstaller\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://forecastsap.polakgrupo.com:2013/siproinstaller/</InstallUrl>
+    <SupportUrl>http://forecastsap.polakgrupo.com:2013/Bsmart2/Default.aspx</SupportUrl>
+    <ProductName>Sistema de Gestion de Pronosticos</ProductName>
+    <PublisherName>Dr. Jose Polak S.A. de C.V.</PublisherName>
+    <SuiteName>Sigepro</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.2.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PronosticosSAP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PronosticosSAP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A31ABC5F5B75F658A3C3EBDC59265144407FB197</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PronosticosSAP_3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>PronosticosSAP_3_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>chart_curve_link.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>PronosticosSAP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>PronosticosSAP.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DefineDebug>false</DefineDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ClassActualizaciones.vb" />
+    <Compile Include="ClassAlmacen.vb" />
+    <Compile Include="ClassArchivos.vb" />
+    <Compile Include="ClassAssembly.vb" />
+    <Compile Include="ClassCentro.vb" />
+    <Compile Include="ClassClienteAgenteProducto.vb" />
+    <Compile Include="ClassColumnas.vb" />
+    <Compile Include="ClassConfig.vb" />
+    <Compile Include="ClassCteWebservices.vb" />
+    <Compile Include="ClassCustomConfig.vb" />
+    <Compile Include="ClassDiasFestivos.vb" />
+    <Compile Include="ClassEstatus.vb" />
+    <Compile Include="ClassFindGrView.vb" />
+    <Compile Include="ClassItemPronosticos.vb" />
+    <Compile Include="ClassLstDivision.vb" />
+    <Compile Include="ClassMsgError.vb" />
+    <Compile Include="ClassProducto.vb" />
+    <Compile Include="ClassProductoCentro.vb" />
+    <Compile Include="ClassProductoCentroAgente.vb" />
+    <Compile Include="ClassPronosticos.vb" />
+    <Compile Include="ClassSerializa.vb" />
+    <Compile Include="ClassTerritorios.vb" />
+    <Compile Include="ClassUser.vb" />
+    <Compile Include="ClassXmlRW.vb" />
+    <Compile Include="ClassZona.vb" />
+    <Compile Include="ConsultarTerritorio.Designer.vb">
+      <DependentUpon>ConsultarTerritorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarTerritorio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmForgotUsuario.Designer.vb">
+      <DependentUpon>FrmForgotUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmForgotUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddCteManual.Designer.vb">
+      <DependentUpon>FrmAddCteManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddCteManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistorialVtas.Designer.vb">
+      <DependentUpon>FrmHistorialVtas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistorialVtas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMensaje.Designer.vb">
+      <DependentUpon>FrmMensaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMensaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOcultaProducto.Designer.vb">
+      <DependentUpon>FrmOcultaProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOcultaProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaProductoVarios.Designer.vb">
+      <DependentUpon>FrmConsultaProductoVarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaProductoVarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProductosPronosticoByCliente.Designer.vb">
+      <DependentUpon>FrmAddProductosPronosticoByCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddProductosPronosticoByCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalendarioFestivos.Designer.vb">
+      <DependentUpon>FrmCalendarioFestivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalendarioFestivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaProductobyCentro.Designer.vb">
+      <DependentUpon>FrmConsultaProductobyCentro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaProductobyCentro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProductoPronostico.Designer.vb">
+      <DependentUpon>FrmAddProductoPronostico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddProductoPronostico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgentes.Designer.vb">
+      <DependentUpon>FrmAgentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgentes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaAlmacenes.Designer.vb">
+      <DependentUpon>FrmConsultaAlmacenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaAlmacenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaCentro.Designer.vb">
+      <DependentUpon>FrmConsultaCentro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaCentro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaPronosticoGlobal.Designer.vb">
+      <DependentUpon>FrmConsultaPronosticoGlobal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaPronosticoGlobal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCteMantenimiento.Designer.vb">
+      <DependentUpon>FrmCteMantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCteMantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCteNoSap.Designer.vb">
+      <DependentUpon>FrmCteNoSap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCteNoSap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExistencias.Designer.vb">
+      <DependentUpon>FrmExistencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExistencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImputText.Designer.vb">
+      <DependentUpon>FrmImputText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImputText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlanAnualConsulta.Designer.vb">
+      <DependentUpon>FrmPlanAnualConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlanAnualConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPronosticoCambios.Designer.vb">
+      <DependentUpon>FrmPronosticoCambios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPronosticoCambios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPronosticosAlmacen.Designer.vb">
+      <DependentUpon>FrmPronosticosAlmacen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPronosticosAlmacen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dac.vb" />
+    <Compile Include="FormZonas.Designer.vb">
+      <DependentUpon>FormZonas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormZonas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZonasConsulta.Designer.vb">
+      <DependentUpon>FormZonasConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormZonasConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgentesConsulta.Designer.vb">
+      <DependentUpon>FrmAgentesConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgentesConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientes.Designer.vb">
+      <DependentUpon>FrmClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfig.designer.vb">
+      <DependentUpon>FrmConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaMaestroPronostico.Designer.vb">
+      <DependentUpon>FrmConsultaMaestroPronostico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaMaestroPronostico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaProducto.Designer.vb">
+      <DependentUpon>FrmConsultaProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGeneraArchivo.designer.vb">
+      <DependentUpon>FrmGeneraArchivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGeneraArchivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImportar.Designer.vb">
+      <DependentUpon>FrmImportar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImportar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.vb">
+      <DependentUpon>FrmProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepartos.Designer.vb">
+      <DependentUpon>FrmRepartos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepartos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSapProductos.Designer.vb">
+      <DependentUpon>FrmSapProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSapProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTestWebServices.Designer.vb">
+      <DependentUpon>FrmTestWebServices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTestWebServices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuario.Designer.vb">
+      <DependentUpon>FrmUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYesNoDialog.Designer.vb">
+      <DependentUpon>FrmYesNoDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYesNoDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPronosticos.Designer.vb">
+      <DependentUpon>MDIPronosticos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPronosticos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassCliente.vb" />
+    <Compile Include="ModComun.vb" />
+    <Compile Include="Resources\ClassCeldas.vb" />
+    <Compile Include="SapForecastDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SapForecastDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClassVendedor.vb" />
+    <Compile Include="SapForecastDataSet.vb">
+      <DependentUpon>SapForecastDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Territorios.Designer.vb">
+      <DependentUpon>Territorios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pronosticos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pronosticos.Designer.vb">
+      <DependentUpon>Pronosticos.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Vendedores.Designer.vb">
+      <DependentUpon>Vendedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web References\CteSigeProCentralWbSrv\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\lhWsCteRecibeArchivos\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConsultarTerritorio.resx">
+      <DependentUpon>ConsultarTerritorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmForgotUsuario.resx">
+      <DependentUpon>FrmForgotUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddCteManual.resx">
+      <DependentUpon>FrmAddCteManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaCentro.resx">
+      <DependentUpon>FrmConsultaCentro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistorialVtas.resx">
+      <DependentUpon>FrmHistorialVtas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMensaje.resx">
+      <DependentUpon>FrmMensaje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOcultaProducto.resx">
+      <DependentUpon>FrmOcultaProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaProductoVarios.resx">
+      <DependentUpon>FrmConsultaProductoVarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddProductosPronosticoByCliente.resx">
+      <DependentUpon>FrmAddProductosPronosticoByCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalendarioFestivos.resx">
+      <DependentUpon>FrmCalendarioFestivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaProductobyCentro.resx">
+      <DependentUpon>FrmConsultaProductobyCentro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddProductoPronostico.resx">
+      <DependentUpon>FrmAddProductoPronostico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgentes.resx">
+      <DependentUpon>FrmAgentes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaAlmacenes.resx">
+      <DependentUpon>FrmConsultaAlmacenes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaPronosticoGlobal.resx">
+      <DependentUpon>FrmConsultaPronosticoGlobal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCteMantenimiento.resx">
+      <DependentUpon>FrmCteMantenimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCteNoSap.resx">
+      <DependentUpon>FrmCteNoSap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExistencias.resx">
+      <DependentUpon>FrmExistencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImputText.resx">
+      <DependentUpon>FrmImputText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlanAnualConsulta.resx">
+      <DependentUpon>FrmPlanAnualConsulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPronosticoCambios.resx">
+      <DependentUpon>FrmPronosticoCambios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPronosticosAlmacen.resx">
+      <DependentUpon>FrmPronosticosAlmacen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZonas.resx">
+      <DependentUpon>FormZonas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZonasConsulta.resx">
+      <DependentUpon>FormZonasConsulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgentesConsulta.resx">
+      <DependentUpon>FrmAgentesConsulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfig.resx">
+      <DependentUpon>FrmConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaMaestroPronostico.resx">
+      <DependentUpon>FrmConsultaMaestroPronostico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaProducto.resx">
+      <DependentUpon>FrmConsultaProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGeneraArchivo.resx">
+      <DependentUpon>FrmGeneraArchivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImportar.resx">
+      <DependentUpon>FrmImportar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepartos.resx">
+      <DependentUpon>FrmRepartos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSapProductos.resx">
+      <DependentUpon>FrmSapProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTestWebServices.resx">
+      <DependentUpon>FrmTestWebServices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYesNoDialog.resx">
+      <DependentUpon>FrmYesNoDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPronosticos.resx">
+      <DependentUpon>MDIPronosticos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territorios.resx">
+      <DependentUpon>Territorios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pronosticos.resx">
+      <DependentUpon>Pronosticos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendedores.resx">
+      <DependentUpon>Vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\Existencias.xml" />
+    <None Include="PronosticosSap.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PronosticosSAP_1_TemporaryKey.pfx" />
+    <None Include="PronosticosSAP_2_TemporaryKey.pfx" />
+    <None Include="PronosticosSAP_3_TemporaryKey.pfx" />
+    <None Include="Resources\exclamation.png" />
+    <None Include="Resources\error_add.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\bullet_error.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\accept.png" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\PronosticosSAP.SapForecastDataSetTableAdapters.ALMACENPRONOSTICOTableAdapter.datasource" />
+    <None Include="My Project\DataSources\PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_ESTADOGEOGRAFICOBYCLAVETableAdapter.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="chart_curve_link.ico" />
+    <None Include="Images\paste_plain.png" />
+    <Content Include="PronosticosSap_Kal.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="PronosticosSAP_TemporaryKey.pfx" />
+    <None Include="SapForecastDataSet.xsc">
+      <DependentUpon>SapForecastDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SapForecastDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SapForecastDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SapForecastDataSet.xss">
+      <DependentUpon>SapForecastDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\CteSigeProCentralWbSrv\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\CteSigeProCentralWbSrv\SigeProCentralWbSrv.wsdl" />
+    <None Include="Web References\lhWsCteRecibeArchivos\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\lhWsCteRecibeArchivos\WsRecibeArchivos.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://forecastsap.polakgrupo.com:2013/SapForecast/SigeProCentralWbSrv.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CteSigeProCentralWbSrv\</RelPath>
+      <UpdateFromURL>http://forecastsap.polakgrupo.com:2013/SapForecast/SigeProCentralWbSrv.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PronosticosSAP_CteSigeProCentralWbSrv_SigeProCentralWbSrv</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://forecastsap.polakgrupo.com:2013/SapForecast/WsRecibeArchivos.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\lhWsCteRecibeArchivos\</RelPath>
+      <UpdateFromURL>http://forecastsap.polakgrupo.com:2013/SapForecast/WsRecibeArchivos.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PronosticosSAP_lhWsCteRecibeArchivos_WsRecibeArchivos</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\lhWsCteRecibeArchivos\WsRecibeArchivos.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\page-star-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\page_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\paper-arrow-red-16-ns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\disk_multiple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\folder_database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\table_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\arrow-left-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\door_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\CteSigeProCentralWbSrv\SigeProCentralWbSrv.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\arrow_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\arrow_switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IconoSigepro2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

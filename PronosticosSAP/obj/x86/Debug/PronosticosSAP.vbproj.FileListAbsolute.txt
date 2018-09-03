@@ -1,0 +1,87 @@
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSAP.exe.config
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.exe
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.xml
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.pdb
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSAP.exe
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSAP.pdb
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSAP.xml
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.ConsultarTerritorio.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FormZonas.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FormZonasConsulta.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmAgentes.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmAgentesConsulta.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConsultaProducto.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmProductos.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.MDIPronosticos.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.TerritoriosForm.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.Pronosticos.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.Resources.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.VendedoresForm.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConfig.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConsultaMaestroPronostico.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmGeneraArchivo.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmTestWebServices.resources
+F:\ForecastSap\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.LoginForm.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.vbprojResolveAssemblyReference.cache
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.ConsultarTerritorio.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmForgotUsuario.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmAddCteManual.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConsultaCentro.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmHistorialVtas.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmMensaje.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmOcultaProducto.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConsultaProductoVarios.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmAddProductosPronosticoByCliente.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmCalendarioFestivos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConsultaProductoByCentro.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmAddProductoPronostico.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmAgentes.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConsultaAlmacenes.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConsultaPronosticoGlobal.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmCteMantenimiento.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmCteNoSap.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmExistencias.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmImputText.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmPlanAnualConsulta.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmPronosticoCambios.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmPronosticosAlmacen.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FormZonas.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FormZonasConsulta.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmAgentesConsulta.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmClientes.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConfig.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConsultaMaestroPronostico.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmConsultaProducto.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmGeneraArchivo.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmImportar.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmProductos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmRepartos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmSapProductos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmTestWebServices.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmUsuario.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.FrmYesNoDialog.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.LoginForm.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.MDIPronosticos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.TerritoriosForm.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.Pronosticos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.Resources.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.VendedoresForm.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.vbproj.GenerateResource.cache
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.vbproj.CoreCompileInputs.cache
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSap_Kal.chm
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSap.chm
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSAP.exe.config
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSAP.exe.manifest
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSAP.application
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSAP.exe
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSAP.pdb
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Debug\PronosticosSAP.xml
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.TrustInfo.xml
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.exe.manifest
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.application
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.exe
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.xml
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Debug\PronosticosSAP.pdb

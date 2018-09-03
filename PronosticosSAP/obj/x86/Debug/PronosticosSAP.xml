@@ -1,0 +1,2235 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PronosticosSAP
+</name>
+</assembly>
+<members>
+<member name="T:PronosticosSAP.My.Resources.Resources">
+<summary>
+  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:PronosticosSAP.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:PronosticosSAP.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
+</summary>
+</member>
+<member name="M:PronosticosSAP.DjpSap.ClassActualizaciones.VerificaVersion">
+ <summary>
+ Verifica que la version de la base de datos y la del  sistema sean iguales.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PronosticosSAP.DjpSap.ClassActualizaciones.VersionAplicacion">
+ <summary>
+ Muestra la version requerida por la aplicacion.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PronosticosSAP.DjpSap.ClassActualizaciones.VersionDb">
+ <summary>
+ Muestra la version de la base de datos actual
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.DjpSap.ClassDiasFestivos.#ctor(System.Int32,System.Int32)">
+ <summary>
+ Inicializa la lista de dias festivos del mes.
+ </summary>
+ <param name="Mes">Mes a consultar</param>
+ <param name="Anio">Año de Consulta</param>
+ <remarks>La propiedad hay Error Value true cuando no logra incializar</remarks>
+</member>
+<member name="M:PronosticosSAP.DjpSap.ClassDiasFestivos.DateAddHabiles(System.DateTime,System.Int32)">
+ <summary>
+ Agrega dias habiles 
+ </summary>
+ <param name="FechaIni">Fecha Inicial </param>
+ <param name="Dias">Dias a sumar</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.DjpSap.ClassProductoCentroAgente.GetDataSet(System.Boolean)">
+ <summary>
+ Indica si el dataset va a devolver una columna con checkbox
+ </summary>
+ <param name="pChekBox"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.DjpSap.ClassUser.FnBuscarUsuario(PronosticosSAP.DjpSap.ClassUser.tpUserAdministrativo)">
+ <summary>
+ Implementa la condiciones para indicar si el usuario actual está 
+ en la lista de super usuarios predeterminada.
+ </summary>
+ <param name="ObjUsuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.DjpSap.ClassXmlRW.#ctor(System.Int32,System.String)">
+ <summary>
+ Constructor 
+ </summary>
+ <param name="pintAccion">Indica si se inicializara un objeto de lectura o escritura 0:Lectura: 1 escritura</param>
+ <param name="pStrfileName">Nombre del Xml que se va a generar</param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ClassCentro.ConsultarCatalogo(System.String,System.String)">
+ <summary>
+ Busca los centros asignados al agente.
+ </summary>
+ <param name="pStrAgente"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ClassProducto.ConsultarCatalogo">
+ <summary>
+ Busca el producto en el catalogo maestro
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ClassProducto.ConsultarCatalogo(System.String)">
+ <summary>
+ Busca el producto en el catalogo maestro producto y centro
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ClassProducto.BuscarEquivalenciaCatalogo">
+ <summary>
+ Busca el factor de conversion del producto segun el catalogo
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ClassTerritorios.#ctor">
+ <summary>
+ Inicializa el objeto con valores vacios
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ClassTerritorios.#ctor(System.String,System.String,System.String)">
+ <summary>
+ Inicializa el objeto con datos definidos desde el cliente
+ </summary>
+ <param name="pStrClave">Clave a asignar</param>
+ <param name="pstrDescripcion">Descripcion </param>
+ <param name="pstrStatus">Estatus</param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ClassTerritorios.Insertar">
+ <summary>
+ Agrega un registro nuevo a la base de datos
+ </summary>
+ <returns>El Identificador Unico</returns>
+ <remarks>Validar el Estatus de proceso en caso de que haya alguna falla</remarks>
+</member>
+<member name="M:PronosticosSAP.ClassTerritorios.Actualizar(System.String)">
+ <summary>
+ Guarda en la base de datos un registro prexistente 
+ </summary>
+ <param name="pStatusAnterior">Estatus del registro que tenia la ultima vez que se leyo para garantizar que otro usuario no lo ha modificado</param>
+ <returns>Verdadero cuando lo actualiza, Falso en caso contrario</returns>
+ <remarks>revisar la propieddd Estatus proceso para ver la causa que no lo guardo</remarks>
+</member>
+<member name="M:PronosticosSAP.ClassTerritorios.Consultar(System.String)">
+ <summary>
+ Lee la base de datos  
+ </summary>
+ <param name="pStrClave">Clave del territorio a leer</param>
+ <remarks>Actualiza las propiedades del objeto</remarks>
+</member>
+<member name="M:PronosticosSAP.FrmAddCteManual.SetAgente(System.String,System.Data.DataRowView)">
+ <summary>
+ Agrega un Registro nuevo al dataset definiendo los datos por default sobre todo en lo campos
+ que no aceptan nulos.
+ </summary>
+ <param name="pValue">Clave del empleado asignado.</param>
+ <param name="mrowView">Nothing</param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmAddCteManual.FillToolStripButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Busca los clientes en sap que son distribuidores por lo tanto en sap tienen una clave de vendedor
+ Pero lo pronostica otra persona.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmAddCteManual.ToolStripButton1_Click(System.Object,System.EventArgs)">
+ <summary>
+ metodo de adicion personalizado, incializando datos por defecto
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmHistorialVtas.ConsultarVtas">
+ <summary>
+ Consulta las ventas del agente seleccionado.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmOcultaProducto.SetConexion">
+ <summary>
+ Establece la conexion a Sql por procesar.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmOcultaProducto.Consultar(System.Int64)">
+ <summary>
+ Consulta  la informacion del disco y estabece el Stored Procedure que guardará los cambios.
+ </summary>
+ <param name="pId">No. Pronostico</param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmOcultaProducto.AbrirToolStripButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Consulta la informacion den disco
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmOcultaProducto.FrmOcultaProducto_Load(System.Object,System.EventArgs)">
+ <summary>
+ Establece el tamaño por defautlt.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmOcultaProducto.GuardarToolStripButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Guarda en la base de datos
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCalendarioFestivos.FnValidaCelda(System.Int32,System.Int32)">
+ <summary>
+ Valida el contenido de la celda que ya se ha editado 
+ </summary>
+ <param name="RowIndex">Renglon a validar.</param>
+ <param name="ColumnIndex">Columna a validar</param>
+ <returns>Verdadero si la celda está correcta.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCalendarioFestivos.FnValidaCelda(System.Int32,System.Int32,System.String)">
+ <summary>
+ Valida el contenido de una celda que está en proceso de edicion.
+ </summary>
+ <param name="RowIndex">Renglon que se está editando</param>
+ <param name="ColumnIndex">Columna que se está editando</param>
+ <param name="FormattedValue">Valor capturado</param>
+ <returns>Verdadero si la celda no tiene errores.</returns>
+ <remarks>Llamar  en la celda cellvalidating</remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCalendarioFestivos.CONSULTA_DIASFESTIVOSALLBindingNavigator_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+ <summary>
+ Controla cuando el usuario quiere elimar un item y pregunta si es posible.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmAddProductoPronostico.Inicializar(System.Object)">
+ <summary>
+ Abre la pantalla de edición de un pronostico dado.
+ </summary>
+ <param name="ItemPronostico"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmAgentes.Button1_Click(System.Object,System.EventArgs)">
+ <summary>
+ Consulta la lista de agentes.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="P:PronosticosSAP.FrmConsultaCentro.SelectedItem">
+ <summary>
+ Devuelve el objeto Centro Seleccionado.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmConsultaPronosticoGlobal.FormatearGrid">
+ <summary>
+ Da formato al grid cuanto termina de consultar los datos del web service
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmConsultaPronosticoGlobal.SetMsg(System.String)">
+ <summary>
+ Presenta mensajes en la barra de estado
+ </summary>
+ <param name="pMensaje"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmConsultaPronosticoGlobal.FormatearGridDetalle">
+ <summary>
+ Da formato al grid de consulta detallada
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmConsultaPronosticoGlobal.ConsultarDatos">
+ <summary>
+ Ejecuta el web service para consultar datos enviados al sistema central.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.FnValidarEliminarCteProducto(System.Windows.Forms.DataGridViewCell)">
+ <summary>
+ Indica si la fila deproducto cliente puede o no ser eliminada.
+ </summary>
+ <param name="pCelda"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.FnValidaCambios">
+ <summary>
+ Devuelve un valor verdadero cuando el dataset tiene cambios.
+ </summary>
+ <returns>Verdadero</returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.SetDefaultValues(System.Int32)">
+ <summary>
+ Establece los valores por default del renglon que se esta editando,
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.BuscarProducto">
+ <summary>
+ Muestra la pantalla para elegir un producto y el valor devuelto lo asigna al renglon actual
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.ConsultaCteProducto">
+ <summary>
+ Obtiene la lista de productos asignados por cliente
+ </summary>
+ <remarks>Define los metodos de consulta y actualizacion a la base de datos </remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.Consultar(System.String,System.String)">
+ <summary>
+ Obtiene la lista de productos asignados al agente seleccionado.
+ </summary>
+ <param name="pIdAgente">Clave del agente.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.FnSinCronizar(System.String)">
+ <summary>
+ Obtiene la lista de clientes existentes en el web services.
+ Actualizando la copia local 
+ </summary>
+ <param name="pIdAgente">Agente a consultar </param>
+ <returns>enProcesoWK.enSincronizarOk </returns>
+ <remarks>Devuelve enProcesoWK.enError si el proceso llega a fallar</remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.BtnSincronizar_Click(System.Object,System.EventArgs)">
+ <summary>
+ Ejecuta la sincroonizacion de clientes de manera asincrona.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.ClientesWKGW_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+ <summary>
+ Define las tareas asincronas a realizar.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.ClientesWKGW_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+ <summary>
+ Tareas adicionales al termina el backgroound
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.BuscarBtn_Click(System.Object,System.EventArgs)">
+ <summary>
+ Consulta el catalogo de agentes y llena el campo respectivo.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.ClienteDg_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ Actualiza la consulta de clientes x producto al dar click en la celda
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.GuardarToolStripButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Guarda los cambios realizados.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.CteProductoDg_RowEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ Asigna los datos predeterminados de agente,sociedad y cliente.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.ToolStripMenuItem1_Click(System.Object,System.EventArgs)">
+ <summary>
+ 'Buisca una celda dentro del grid de clientes.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.CteProductoDg_UserDeletingRow(System.Object,System.Windows.Forms.DataGridViewRowCancelEventArgs)">
+ <summary>
+ Valida cuando se pulsa el boton delete del renglon
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.AddCteProductoMnu_Click(System.Object,System.EventArgs)">
+ <summary>
+ Agrega un registro al dataset cuando el usuario da click en el boton de registro nuevo.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmCteMantenimiento.ClienteProductoDg_CellValidating(System.Object,System.Windows.Forms.DataGridViewCellValidatingEventArgs)">
+ <summary>
+ Valida el contenido de la celda vigencias.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmExistencias.MaterialBtn_Click(System.Object,System.EventArgs)">
+ <summary>
+ Muestra pantalla para seleccionar un producto del listado de materiales.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmExistencias.ExistenciasBGW_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+ <summary>
+ Procesos  que se ejecutan en un segundo treath
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="F:PronosticosSAP.FrmPronosticoCambios.objItemConsulta">
+ <summary>
+ Presenta Historico de cambios por posicion.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticoCambios.Consultar">
+ <summary>
+ Preenta el historico de cambios
+ </summary>
+ <remarks>Considerar que el Objeto objItemConsulta debe Inicializarse previamente.</remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.Serializar">
+ <summary>
+ Serializa como xml el objeto actual
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.DesSerializar(PronosticosSAP.ClassPronosticos@)">
+ <summary>
+ desSerializa el objeto a un xml con el nombre 
+ </summary>
+ <param name="pPronostico"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.MuestraPronostico">
+ <summary>
+ Presenta el resultado del pronostico, este metodo se manda llamar despues que se hayan llenaddo los datasets
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.FillData(PronosticosSAP.FrmPronosticosAlmacen.tpTablasDataset,System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ LLena el contenido de los dataset (copias de datos)
+ </summary>
+ <param name="pTable">Nombre de la tabla a llenar</param>
+ <param name="pId">Identificador del escenario</param>
+ <param name="pConexion">Conexion a sql server</param>
+ <remarks>La conexion debe estar abierta</remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.AgentesBtn_Click(System.Object,System.EventArgs)">
+ <summary>
+ Ventana de dialogo para busqueda de agentes.
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.ZonaAgentesBtn_Click(System.Object,System.EventArgs)">
+ <summary>
+ Ejecuta ventana de dialogo para buscar una zona de agentes.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.NuevoToolStripButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Se ejecuta cuando el usuario desea crear un escenario o pronostico nuevo.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.Pronosticos_Load(System.Object,System.EventArgs)">
+ <summary>
+ Define el diseño del grid 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.InicializaColGrid(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="pNegocio">A:Agricola, I:Industrial, E:Exportacion</param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.AbrirToolStripButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Actualiza la consulta.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.Button1_Click(System.Object,System.EventArgs)">
+ <summary>
+ Actualiza el contenido del grid aplicando los filtros de busqueda.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.DataGridView1_CellValidated(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ Actualiza el valor de la celda redondeada segun el factor de conversion
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmPronosticosAlmacen.AutoSaveTimer_Tick(System.Object,System.EventArgs)">
+ <summary>
+ Controla el tiempo en el cual se efecutará el guardado automático.
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmConfig.ChkWindows_CheckStateChanged(System.Object,System.EventArgs)">
+ <summary>
+ Habilita o desabilita cambios cuando se activa seguridad de windows.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmConfig.Dias_Validating(System.Object,System.ComponentModel.CancelEventArgs)">
+ <summary>
+ Valida que se hayan capturado entre 1 y 30 dias.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmGeneraArchivo.EnviarAsync(System.Int64)">
+ <summary>
+ Hace el envio asincrono
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:PronosticosSAP.FrmImportar.enDefPronosticoLinea2">
+ <summary>
+ Define las columnas que se estan considerando como detalle del pronostico
+ o del plan
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:PronosticosSAP.FrmImportar.enDefPronosticoHdr">
+ <summary>
+ Define las columnas utilizadas combo encabezado del pronostico o plan
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmImportar.ImportarBW_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+ <summary>
+ Se ejecuta cuando termina la ejecución del proceso de importacion.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmImportar.CopiarToolStripButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Sirve para copiar la bitacora de errores en un archivo de texto.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmImportar.ImportarBW_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+ <summary>
+ Define la tarea a ejecutar de manera asincrona
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmImportar.AbrirToolStripButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Pregunta por el nombre del archivo a importar
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmImportar.ImportarBW_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+ <summary>
+ Reporta avances del proceso.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmImportar.ImportarArchivo(System.String)">
+ <summary>
+ Importa los clientes asignados por agente.
+ </summary>
+ <param name="pStrTabla"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmImportar.ImportaPronosticos">
+ <summary>
+ Importa  el pronostico desde un archivo de texto.
+ </summary>
+ <remarks>El pronostico no debe existir antes de continuar.</remarks>
+</member>
+<member name="M:PronosticosSAP.FrmImportar.ImportaPlan">
+ <summary>
+ Importa  el plan anual de ventas 
+ </summary>
+ <remarks>El plan no debe existir antes de continuar.</remarks>
+</member>
+<member name="M:PronosticosSAP.FrmImportar.FrmImportar_Load(System.Object,System.EventArgs)">
+ <summary>
+ Inicializa la colecion para llenar la lista de tablas
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmRepartos.SetValues">
+ <summary>
+ Asigna los valores del objeto asigando por referencia a los controles.
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmRepartos.FrmRepartos_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ Valida el proceso de descar de datos.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmSapProductos.Guardar">
+ <summary>
+ Actuliza los catalogos de productos, prodcuto almacen y unidades de medida.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.FrmSapProductos.ConsultarSap">
+ <summary>
+ Genera dataset de informacion proveniente del servidor de forecastsap.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.MDIPronosticos.CloseMensajero(System.Boolean)">
+ <summary>
+ Cierra la ventana del mensajero de manera interactiva.
+ </summary>
+ <param name="pBolSelectByUser">El usuario Selecciona Cerrar ventana interactivamente.</param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ModComun.MsgError(System.String)">
+ <summary>
+ Mensaje presentar cuando ocurre un error grave
+ </summary>
+ <param name="pstrMensaje"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ModComun.MsgWarning(System.String)">
+ <summary>
+ Mensaje a presentar cuando ocurre una alerta
+ </summary>
+ <param name="pstrMensaje"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ModComun.MsgYesNo(System.String)">
+ <summary>
+ DEvuelve un verdadero si el usuario presiono la tecla yes
+ </summary>
+ <param name="pstrMensaje">Mensaje a presentar </param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ModComun.MsgYesNo(System.String,System.Windows.Forms.MessageBoxDefaultButton)">
+ <summary>
+ DEvuelve un verdadero si el usuario presiono la tecla yes
+ </summary>
+ <param name="pstrMensaje">Mensaje a presentar </param>
+ <param name="DefaultButton">Indica si se pone un boton como predeterminado</param>
+ <returns>Verdadero si se pulsa el boton yes</returns>
+</member>
+<member name="M:PronosticosSAP.ModComun.MsgInfo(System.String)">
+ <summary>
+ Mensaje a presentar cuando ocurre una alerta
+ </summary>
+ <param name="pstrMensaje"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ModComun.CustomYesNo(System.String,System.Boolean,System.Windows.Forms.Form)">
+ <summary>
+ Presenta un formulario personalizado de si/no
+ </summary>
+ <param name="pstrMensaje">Mensaje a mostrar</param>
+ <param name="DefaultYes">Verdadero si el boton predetermina es Yes</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ModComun.FnStr2Bol(System.String)">
+ <summary>
+ Convierte una cadena cuyo valor es "S" en una true o false
+ </summary>
+ <param name="pValor">Valor a validar</param>
+ <returns>Devuelve true si la cadena vale s/S</returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ModComun.FnStr2Bol(System.String,System.String)">
+ <summary>
+ Compara dos cadenas e indica si son iguales. quita espacios e ignora mayusculas y minusculas.
+ </summary>
+ <param name="pValor"></param>
+ <param name="pValorVerdadero"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.ClassCeldas.Posicionar(System.String,System.Windows.Forms.DataGridView@,System.String,System.String,System.Boolean)">
+ <summary>
+ Devuelve la celda que contiene un valor predeterminado
+ </summary>
+ <param name="pIdBuscar">Valor a Buscar</param>
+ <param name="pControl">Control en el cual se va hacer la busqueda</param>
+ <param name="pColumnName">Nombre de la columna a buscar</param>
+ <param name="pColumnTarget">Nombre de la columna a devolver normalmente es igual a pColumName</param>
+ <param name="pBusExacta">Indica si la busqueda es exacta </param>
+ <returns>Devuelve la celda que contiene el dato deseado</returns>
+ <remarks></remarks>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_AGENTESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ZONASBYCLAVEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTAESTADOBYZONADataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ESTADOGEOGRAFICOBYCLAVEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ZONAXAGENTEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_PRODUCTODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_PRODUCTOXALMACENDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_MAESTROPRONOSTICOSBYIDDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.ALMACENPRONOSTICODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_CLIENTESBYPRONOSTICODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTAUMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_AGENTECLIENTEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_CLIENTESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_DETALLEPRONOSTICOSALMACENDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ALMACENDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_DETALLEPRONOSTICOS_RPTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.USP_CONSULTA_USUARIODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_HISTORICOCAMBIOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_CENTRODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ENVIO_LIBERADODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.USP_CONSULTA_USUARIO1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_DIASFESTIVOSALLDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.GETCENTROBYVARIOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_AGENTESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ZONASBYCLAVERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTAESTADOBYZONARow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ESTADOGEOGRAFICOBYCLAVERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ZONAXAGENTERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_PRODUCTORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_PRODUCTOXALMACENRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_MAESTROPRONOSTICOSBYIDRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.ALMACENPRONOSTICORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_CLIENTESBYPRONOSTICORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTAUMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_AGENTECLIENTERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_CLIENTESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_DETALLEPRONOSTICOSALMACENRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ALMACENRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_DETALLEPRONOSTICOS_RPTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.USP_CONSULTA_USUARIORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_HISTORICOCAMBIOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_CENTRORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ENVIO_LIBERADORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.USP_CONSULTA_USUARIO1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_DIASFESTIVOSALLRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.GETCENTROBYVARIOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_AGENTESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ZONASBYCLAVERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTAESTADOBYZONARowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ESTADOGEOGRAFICOBYCLAVERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ZONAXAGENTERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_PRODUCTORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_PRODUCTOXALMACENRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_MAESTROPRONOSTICOSBYIDRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.ALMACENPRONOSTICORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_CLIENTESBYPRONOSTICORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTAUMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_AGENTECLIENTERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_CLIENTESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_DETALLEPRONOSTICOSALMACENRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ALMACENRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_DETALLEPRONOSTICOS_RPTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.USP_CONSULTA_USUARIORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_HISTORICOCAMBIOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_CENTRORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_ENVIO_LIBERADORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.USP_CONSULTA_USUARIO1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.CONSULTA_DIASFESTIVOSALLRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSet.GETCENTROBYVARIOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_AGENTESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_ZONASBYCLAVETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTAESTADOBYZONATableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_ESTADOGEOGRAFICOBYCLAVETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_ZONAXAGENTETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_PRODUCTOTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_PRODUCTOXALMACENTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_MAESTROPRONOSTICOSBYIDTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.ALMACENPRONOSTICOTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_CLIENTESBYPRONOSTICOTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTAUMTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_AGENTECLIENTETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_CLIENTESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_DETALLEPRONOSTICOSALMACENTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_ALMACENTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_DETALLEPRONOSTICOS_RPTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.USP_CONSULTA_USUARIOTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_HISTORICOCAMBIOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_CENTROTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_ENVIO_LIBERADOTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.USP_CONSULTA_USUARIO1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.CONSULTA_DIASFESTIVOSALLTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.GETCENTROBYVARIOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PronosticosSAP.SapForecastDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(PronosticosSAP.SapForecastDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PronosticosSAP.SapForecastDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(PronosticosSAP.SapForecastDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PronosticosSAP.SapForecastDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(PronosticosSAP.SapForecastDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PronosticosSAP.SapForecastDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PronosticosSAP.SapForecastDataSetTableAdapters.TableAdapterManager.UpdateAll(PronosticosSAP.SapForecastDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PronosticosSAP.SapForecastDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="M:PronosticosSAP.ClassVendedor.ConsultarCatalogo">
+ <summary>
+ Buscar el elmento en la base solo por la clave
+ </summary>
+ <returns></returns>
+ <remarks>Para realizar una busqueda correcta actualizar la propiedad clave</remarks>
+</member>
+<member name="M:PronosticosSAP.ClassVendedor.ConsultarCatalogo(System.String,System.String,System.String,System.String)">
+ <summary>
+ Hace la consulta cuando se conocen clave, descripcion, territorio
+ </summary>
+ <param name="pstrClave"></param>
+ <param name="pstrDescipcion"></param>
+ <param name="pTerritorio"></param>
+ <param name="Status"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.PuedeSalir">
+ <summary>
+ Valida si el usuario ha modificado algun dato del dataset por lo tanto no
+ debe salir sin guardar.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.AgregaTotales2">
+ <summary>
+ Agrega los totales por producto y mes al visualizar el pronostico.
+ </summary>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:PronosticosSAP.Pronosticos.CalculaGranTotal">
+ <summary>
+ Calcula el total anual de todos los productos
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.SetItemActual">
+ <summary>
+ Establece el Objeto de la celda que se esta actualizando
+ El cual se usa como intermediario para cambiar datos con los formularios
+ de Historico de Movimientos, Repartos Entre Otros.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.ShowErrorMessage(System.String)">
+ <summary>
+ Muestra ventana de error
+ </summary>
+ <param name="pstrMensaje"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.ShowErrorWarning(System.String)">
+ <summary>
+ Muestra ventana de advertencia
+ </summary>
+ <param name="pstrMensaje"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.ShowMsgYesNo(System.String)">
+ <summary>
+ Muestra mensaje para elegir entre el boton yes/no
+ </summary>
+ <param name="pstrMensaje">Texto o pregunta a realizar</param>
+ <returns>Devuelee true cuando se pulsa el boton yes</returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.GetColumnByDataPropertyName(System.String)">
+ <summary>
+ Obtiene una columna del datagrid proporcionando el nombre del campo vinculado en la base de datos.
+ </summary>
+ <param name="pDataPropertyName">Nombre del campo de la base de datos.</param>
+ <returns></returns>
+ <remarks>Validar que la columna devuelta no sea nothing</remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.CalculaTotalMes(System.Int32)">
+ <summary>
+ Calcula los totales x mes.
+ </summary>
+ <param name="mColIndex"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.CalculaTotalProducto(System.Int32)">
+ <summary>
+ Calula el total del pronostico x producto
+ </summary>
+ <param name="mRowIndex">Renglon actual</param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.DetieneTimer">
+ <summary>
+ Detine el proceso del timer evitar llamadas recursivas
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.InicializaTimer">
+ <summary>
+ Prepara el timer para guardar los datos automaticamente
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.GuardaMovsEscenario">
+ <summary>
+ GUARDA LOS DATOS DEL GRID 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.InicializarDataSet(System.Int64)">
+ <summary>
+ Inicializa el dataset de pronosticos.
+ </summary>
+ <param name="pIdPronostico">No. Pronostico</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.Serializar">
+ <summary>
+ Serializa como xml el objeto actual
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.DesSerializar(PronosticosSAP.ClassPronosticos@)">
+ <summary>
+ desSerializa el objeto a un xml con el nombre 
+ </summary>
+ <param name="pPronostico">Objeto a serializar</param>
+ <returns>Verdadero si no hay error</returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.EjecutaConsulta">
+ <summary>
+ Consulta la base datos del pronostico.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.AgregaCampoCalculado">
+ <summary>
+ AgregaCampoCalculado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.MuestraPronostico">
+ <summary>
+ Presenta el resultado del pronostico, este metodo se manda llamar despues que se hayan llenaddo los datasets
+ </summary>
+ <remarks>Ejecutar el Metodos InicializarDataSet</remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.GuardarNuevoAsync">
+ <summary>
+ Genera un pronostico nuevo 
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.GuardarExistenteAsync">
+ <summary>
+ Guarda un pronostico existente.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.FillData(PronosticosSAP.Pronosticos.tpTablasDataset,System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ LLena el contenido de los dataset (copias de datos)
+ </summary>
+ <param name="pTable">Nombre de la tabla a llenar</param>
+ <param name="pId">Identificador del escenario</param>
+ <param name="pConexion">Conexion a sql server</param>
+ <remarks>La conexion debe estar abierta</remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.DataGridView1_Sorted(System.Object,System.EventArgs)">
+ <summary>
+ Actualiza los totales cuando el usuario ordena las columnas
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.BtnSalir_Click(System.Object,System.EventArgs)">
+ <summary>
+ Se ejecuta cuando se da click en el boton salir.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.PresupuestoMnu_Click(System.Object,System.EventArgs)">
+ <summary>
+ Presenta la pantalla del presupuesto de ventas
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.AddProductoBtn_Click(System.Object,System.EventArgs)">
+ <summary>
+ Agrega producto a un pronostico.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.AgentesBtn_Click(System.Object,System.EventArgs)">
+ <summary>
+ Ventana de dialogo para busqueda de agentes.
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.ZonaAgentesBtn_Click(System.Object,System.EventArgs)">
+ <summary>
+ Ejecuta ventana de dialogo para buscar una zona de agentes.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.NuevoToolStripButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Se ejecuta cuando el usuario desea crear un escenario o pronostico nuevo.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.Pronosticos_Load(System.Object,System.EventArgs)">
+ <summary>
+ Define el diseño del grid 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.InicializaColGrid(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="pNegocio">A:Agricola, I:Industrial, E:Exportacion</param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.AbrirToolStripButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Actualiza la consulta.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:PronosticosSAP.Pronosticos.Button1_Click(System.Object,System.EventArgs)">
+ <summary>
+ Actualiza el contenido del grid aplicando los filtros de busqueda.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PronosticosSAP.Pronosticos.DataGridView1_CellValidated(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ Actualiza el valor de la celda redondeada segun el factor de conversion
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.#ctor">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.ValidaUsuarioCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.ArchivosProcesadosCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.EstadoWsCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsAgentesCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsEstatusAnualEnvioCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDesContenidoFileCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPronosticoXAgentePeriodoCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsPronosticosXDivisionCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGuardaPronosticoXDivisionCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDateCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsNegociosAsignadosCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPeriodosXDivisionCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPermisosCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGuardaEstadoPeriodoCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsMovsPronosticosXDivisionCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnSendMailCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetClientesCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsSapPRODUCTOSCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsSapExistenciasCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsMensajesCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetVtasXAgenteMesCompleted">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.ValidaUsuario(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.ValidaUsuarioAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.ValidaUsuarioAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.ArchivosProcesados(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.ArchivosProcesadosAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.ArchivosProcesadosAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.EstadoWs">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.EstadoWsAsync">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.EstadoWsAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsAgentes(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsAgentesAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsAgentesAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsEstatusAnualEnvio(System.String,System.Int32)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsEstatusAnualEnvioAsync(System.String,System.Int32)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsEstatusAnualEnvioAsync(System.String,System.Int32,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDesContenidoFile(System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDesContenidoFileAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDesContenidoFileAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPronosticoXAgentePeriodo(System.String,System.DateTime)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPronosticoXAgentePeriodoAsync(System.String,System.DateTime)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPronosticoXAgentePeriodoAsync(System.String,System.DateTime,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsPronosticosXDivision(System.Int32,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsPronosticosXDivisionAsync(System.Int32,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsPronosticosXDivisionAsync(System.Int32,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGuardaPronosticoXDivision(System.String,System.Int32,System.Int32,System.String,System.String,System.Double,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGuardaPronosticoXDivisionAsync(System.String,System.Int32,System.Int32,System.String,System.String,System.Double,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGuardaPronosticoXDivisionAsync(System.String,System.Int32,System.Int32,System.String,System.String,System.Double,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDate">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDateAsync">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDateAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsNegociosAsignados(System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsNegociosAsignadosAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsNegociosAsignadosAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPeriodosXDivision(System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPeriodosXDivisionAsync(System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPeriodosXDivisionAsync(System.Int32,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPermisos(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPermisosAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsPermisosAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGuardaEstadoPeriodo(System.String,System.Int32,System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGuardaEstadoPeriodoAsync(System.String,System.Int32,System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGuardaEstadoPeriodoAsync(System.String,System.Int32,System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsMovsPronosticosXDivision(System.Int32,System.Int32,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsMovsPronosticosXDivisionAsync(System.Int32,System.Int32,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetDsMovsPronosticosXDivisionAsync(System.Int32,System.Int32,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnSendMail(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnSendMailAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnSendMailAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetClientes(System.String,System.DateTime)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetClientesAsync(System.String,System.DateTime)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetClientesAsync(System.String,System.DateTime,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsSapPRODUCTOS(System.Nullable{System.Int32},System.String,System.String,System.Int32)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsSapPRODUCTOSAsync(System.Nullable{System.Int32},System.String,System.String,System.Int32)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsSapPRODUCTOSAsync(System.Nullable{System.Int32},System.String,System.String,System.Int32,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsSapExistencias(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsSapExistenciasAsync(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsSapExistenciasAsync(System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsMensajes(System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsMensajesAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.FnGetDsMensajesAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetVtasXAgenteMes(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetVtasXAgenteMesAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.GetVtasXAgenteMesAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.CteSigeProCentralWbSrv.SigeProCentralWbSrv.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.ValidaUsuarioCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.ValidaUsuarioCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.ValidaUsuarioCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.ArchivosProcesadosCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.ArchivosProcesadosCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.ArchivosProcesadosCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.EstadoWsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.EstadoWsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.EstadoWsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsAgentesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsAgentesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.GetDsAgentesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsEstatusAnualEnvioCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsEstatusAnualEnvioCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.GetDsEstatusAnualEnvioCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDesContenidoFileCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDesContenidoFileCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.GetDesContenidoFileCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsPronosticoXAgentePeriodoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsPronosticoXAgentePeriodoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.GetDsPronosticoXAgentePeriodoCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsPronosticosXDivisionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsPronosticosXDivisionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsPronosticosXDivisionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGuardaPronosticoXDivisionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGuardaPronosticoXDivisionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.FnGuardaPronosticoXDivisionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDateCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDateCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDateCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsNegociosAsignadosCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsNegociosAsignadosCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.GetDsNegociosAsignadosCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsPeriodosXDivisionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsPeriodosXDivisionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.GetDsPeriodosXDivisionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsPermisosCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsPermisosCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.GetDsPermisosCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGuardaEstadoPeriodoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGuardaEstadoPeriodoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.FnGuardaEstadoPeriodoCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsMovsPronosticosXDivisionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetDsMovsPronosticosXDivisionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.GetDsMovsPronosticosXDivisionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnSendMailCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnSendMailCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.FnSendMailCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetClientesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetClientesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.GetClientesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsSapPRODUCTOSCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsSapPRODUCTOSCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsSapPRODUCTOSCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsSapExistenciasCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsSapExistenciasCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsSapExistenciasCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsMensajesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsMensajesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.FnGetDsMensajesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetVtasXAgenteMesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.CteSigeProCentralWbSrv.GetVtasXAgenteMesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.CteSigeProCentralWbSrv.GetVtasXAgenteMesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.#ctor">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.ErrDisplayCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.EchoCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.SaveFileCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.FileLengthCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.GetErrorCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.GetPathRecepcionCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.CalendarizarCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.ConsultaArchivoBitacoraCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.AddArchivoBitacoraCompleted">
+<remarks/>
+</member>
+<member name="E:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.TransformarArchivoCompleted">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.ErrDisplay">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.ErrDisplayAsync">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.ErrDisplayAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.Echo">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.EchoAsync">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.EchoAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.SaveFile(System.Byte[],System.String,System.String,System.String,System.Int32,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.SaveFileAsync(System.Byte[],System.String,System.String,System.String,System.Int32,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.SaveFileAsync(System.Byte[],System.String,System.String,System.String,System.Int32,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.FileLength(System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.FileLengthAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.FileLengthAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.GetError(System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.GetErrorAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.GetErrorAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.GetPathRecepcion">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.GetPathRecepcionAsync">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.GetPathRecepcionAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.Calendarizar">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.CalendarizarAsync">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.CalendarizarAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.ConsultaArchivoBitacora(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.ConsultaArchivoBitacoraAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.ConsultaArchivoBitacoraAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.AddArchivoBitacora(System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.AddArchivoBitacoraAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.AddArchivoBitacoraAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.TransformarArchivo(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.TransformarArchivoAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.TransformarArchivoAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:PronosticosSAP.lhWsCteRecibeArchivos.WsRecibeArchivos.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.ErrDisplayCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.ErrDisplayCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.ErrDisplayCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.EchoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.EchoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.EchoCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.SaveFileCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.SaveFileCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.SaveFileCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.FileLengthCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.FileLengthCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.FileLengthCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.GetErrorCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.GetErrorCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.GetErrorCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.GetPathRecepcionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.GetPathRecepcionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.GetPathRecepcionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.CalendarizarCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.CalendarizarCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.CalendarizarCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.ConsultaArchivoBitacoraCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.ConsultaArchivoBitacoraCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.ConsultaArchivoBitacoraCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.AddArchivoBitacoraCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.AddArchivoBitacoraCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.AddArchivoBitacoraCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.AddArchivoBitacoraCompletedEventArgs.pstrError">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.TransformarArchivoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:PronosticosSAP.lhWsCteRecibeArchivos.TransformarArchivoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:PronosticosSAP.lhWsCteRecibeArchivos.TransformarArchivoCompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

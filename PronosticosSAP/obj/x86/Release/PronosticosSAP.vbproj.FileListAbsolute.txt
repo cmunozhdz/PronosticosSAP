@@ -1,0 +1,166 @@
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.exe.config
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.exe
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.XmlSerializers.dll
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.pdb
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.xml
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.ConsultarTerritorio.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAgentes.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaAlmacenes.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmPronosticosAlmacen.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FormZonas.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FormZonasConsulta.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAgentesConsulta.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmClienteProducto.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmClientes.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConfig.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaMaestroPronostico.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaProducto.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmGeneraArchivo.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmImportar.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmProductos.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmRepartos.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmTestWebServices.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.LoginForm.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.MDIPronosticos.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.TerritoriosForm.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.Pronosticos.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.Resources.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.VendedoresForm.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.exe
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.xml
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.pdb
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.XmlSerializers.dll
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.exe.manifest
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.application
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.TrustInfo.xml
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.exe.manifest
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.application
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmUsuario.resources
+C:\Documents and Settings\capacitacion\mis documentos\visual studio 2010\Projects\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmReportViewer.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSap_Kal.chm
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSap.chm
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.exe.config
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.exe.manifest
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.application
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.exe
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.XmlSerializers.dll
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.pdb
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.xml
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.ConsultarTerritorio.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmForgotUsuario.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAddCteManual.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaCentro.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmHistorialVtas.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmMensaje.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmOcultaProducto.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaProductoVarios.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAddProductosPronosticoByCliente.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmCalendarioFestivos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaProductoByCentro.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAddProductoPronostico.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAgentes.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaAlmacenes.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaPronosticoGlobal.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmCteMantenimiento.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmCteNoSap.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmExistencias.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmImputText.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmPlanAnualConsulta.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmPronosticoCambios.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmPronosticosAlmacen.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FormZonas.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FormZonasConsulta.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAgentesConsulta.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmClientes.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConfig.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaMaestroPronostico.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaProducto.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmGeneraArchivo.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmImportar.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmProductos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmRepartos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmSapProductos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmTestWebServices.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmUsuario.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmYesNoDialog.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.LoginForm.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.MDIPronosticos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.TerritoriosForm.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.Pronosticos.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.Resources.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.VendedoresForm.resources
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.vbproj.GenerateResource.cache
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.vbproj.CoreCompileInputs.cache
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.TrustInfo.xml
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.exe.manifest
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.application
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.exe
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.xml
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.pdb
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.XmlSerializers.dll
+Z:\Mi unidad\Proyectos.Net\Sigepro2018\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.vbprojResolveAssemblyReference.cache
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSap_Kal.chm
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSap.chm
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.exe.config
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.exe.manifest
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.application
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.exe
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.XmlSerializers.dll
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.pdb
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\bin\Release\PronosticosSAP.xml
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.vbprojAssemblyReference.cache
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.ConsultarTerritorio.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmForgotUsuario.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAddCteManual.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaCentro.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmHistorialVtas.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmMensaje.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmOcultaProducto.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaProductoVarios.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAddProductosPronosticoByCliente.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmCalendarioFestivos.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaProductoByCentro.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAddProductoPronostico.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAgentes.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaAlmacenes.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaPronosticoGlobal.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmCteMantenimiento.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmCteNoSap.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmExistencias.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmImputText.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmPlanAnualConsulta.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmPronosticoCambios.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmPronosticosAlmacen.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FormZonas.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FormZonasConsulta.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmAgentesConsulta.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmClientes.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConfig.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaMaestroPronostico.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmConsultaProducto.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmGeneraArchivo.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmImportar.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmProductos.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmRepartos.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmSapProductos.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmTestWebServices.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmUsuario.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.FrmYesNoDialog.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.LoginForm.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.MDIPronosticos.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.TerritoriosForm.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.Pronosticos.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.Resources.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.VendedoresForm.resources
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.vbproj.GenerateResource.cache
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.vbproj.CoreCompileInputs.cache
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.TrustInfo.xml
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.exe.manifest
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.application
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.exe
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.xml
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.pdb
+C:\Users\clemente\Documents\Visual Studio 2017\Projects\SieproGitHub\Sigepro\PronosticosSAP\PronosticosSAP\obj\x86\Release\PronosticosSAP.XmlSerializers.dll

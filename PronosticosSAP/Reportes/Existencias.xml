@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="ExistenciasDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ExistenciasDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="REMOTO_GET_EXISTENCIASXALMACEN">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MATNR" type="xs:string" minOccurs="0" />
+              <xs:element name="MAKTX" type="xs:string" minOccurs="0" />
+              <xs:element name="WERKS" type="xs:string" minOccurs="0" />
+              <xs:element name="LGORT" type="xs:string" minOccurs="0" />
+              <xs:element name="CHARG" type="xs:string" minOccurs="0" />
+              <xs:element name="MEINS" type="xs:string" minOccurs="0" />
+              <xs:element name="LABST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPEME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INSME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CLABS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRAME" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

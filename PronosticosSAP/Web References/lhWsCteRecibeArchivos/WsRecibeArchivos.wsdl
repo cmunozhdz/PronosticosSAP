@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ErrDisplay">
+        <s:complexType />
+      </s:element>
+      <s:element name="ErrDisplayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ErrDisplayResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Echo">
+        <s:complexType />
+      </s:element>
+      <s:element name="EchoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EchoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mVarArr" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="docName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStrRemitente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrEnviarMail" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intChunk" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParametrosEntrada" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mParNegocio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveFileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileLength">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="docName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileLengthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FileLengthResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetError">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="docName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetErrorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetErrorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPathRecepcion">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPathRecepcionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPathRecepcionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Calendarizar">
+        <s:complexType />
+      </s:element>
+      <s:element name="CalendarizarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CalendarizarResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaArchivoBitacora">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pstrFilename" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaIni" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaFin" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCveAgente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pListaStatus" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaArchivoBitacoraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaArchivoBitacoraResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddArchivoBitacora">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pstrFilename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddArchivoBitacoraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddArchivoBitacoraResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransformarArchivo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pStrFilename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStrEstatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStrLista" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransformarArchivoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TransformarArchivoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ErrDisplaySoapIn">
+    <wsdl:part name="parameters" element="tns:ErrDisplay" />
+  </wsdl:message>
+  <wsdl:message name="ErrDisplaySoapOut">
+    <wsdl:part name="parameters" element="tns:ErrDisplayResponse" />
+  </wsdl:message>
+  <wsdl:message name="EchoSoapIn">
+    <wsdl:part name="parameters" element="tns:Echo" />
+  </wsdl:message>
+  <wsdl:message name="EchoSoapOut">
+    <wsdl:part name="parameters" element="tns:EchoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveFileSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveFile" />
+  </wsdl:message>
+  <wsdl:message name="SaveFileSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileLengthSoapIn">
+    <wsdl:part name="parameters" element="tns:FileLength" />
+  </wsdl:message>
+  <wsdl:message name="FileLengthSoapOut">
+    <wsdl:part name="parameters" element="tns:FileLengthResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetErrorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetError" />
+  </wsdl:message>
+  <wsdl:message name="GetErrorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetErrorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPathRecepcionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPathRecepcion" />
+  </wsdl:message>
+  <wsdl:message name="GetPathRecepcionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPathRecepcionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalendarizarSoapIn">
+    <wsdl:part name="parameters" element="tns:Calendarizar" />
+  </wsdl:message>
+  <wsdl:message name="CalendarizarSoapOut">
+    <wsdl:part name="parameters" element="tns:CalendarizarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaArchivoBitacoraSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaArchivoBitacora" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaArchivoBitacoraSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaArchivoBitacoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddArchivoBitacoraSoapIn">
+    <wsdl:part name="parameters" element="tns:AddArchivoBitacora" />
+  </wsdl:message>
+  <wsdl:message name="AddArchivoBitacoraSoapOut">
+    <wsdl:part name="parameters" element="tns:AddArchivoBitacoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransformarArchivoSoapIn">
+    <wsdl:part name="parameters" element="tns:TransformarArchivo" />
+  </wsdl:message>
+  <wsdl:message name="TransformarArchivoSoapOut">
+    <wsdl:part name="parameters" element="tns:TransformarArchivoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsRecibeArchivosSoap">
+    <wsdl:operation name="ErrDisplay">
+      <wsdl:input message="tns:ErrDisplaySoapIn" />
+      <wsdl:output message="tns:ErrDisplaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Echo">
+      <wsdl:input message="tns:EchoSoapIn" />
+      <wsdl:output message="tns:EchoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveFile">
+      <wsdl:input message="tns:SaveFileSoapIn" />
+      <wsdl:output message="tns:SaveFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileLength">
+      <wsdl:input message="tns:FileLengthSoapIn" />
+      <wsdl:output message="tns:FileLengthSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetError">
+      <wsdl:input message="tns:GetErrorSoapIn" />
+      <wsdl:output message="tns:GetErrorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPathRecepcion">
+      <wsdl:input message="tns:GetPathRecepcionSoapIn" />
+      <wsdl:output message="tns:GetPathRecepcionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Calendarizar">
+      <wsdl:input message="tns:CalendarizarSoapIn" />
+      <wsdl:output message="tns:CalendarizarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaArchivoBitacora">
+      <wsdl:input message="tns:ConsultaArchivoBitacoraSoapIn" />
+      <wsdl:output message="tns:ConsultaArchivoBitacoraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddArchivoBitacora">
+      <wsdl:input message="tns:AddArchivoBitacoraSoapIn" />
+      <wsdl:output message="tns:AddArchivoBitacoraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransformarArchivo">
+      <wsdl:input message="tns:TransformarArchivoSoapIn" />
+      <wsdl:output message="tns:TransformarArchivoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsRecibeArchivosSoap" type="tns:WsRecibeArchivosSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ErrDisplay">
+      <soap:operation soapAction="http://tempuri.org/ErrDisplay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Echo">
+      <soap:operation soapAction="http://tempuri.org/Echo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFile">
+      <soap:operation soapAction="http://tempuri.org/SaveFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileLength">
+      <soap:operation soapAction="http://tempuri.org/FileLength" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetError">
+      <soap:operation soapAction="http://tempuri.org/GetError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPathRecepcion">
+      <soap:operation soapAction="http://tempuri.org/GetPathRecepcion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Calendarizar">
+      <soap:operation soapAction="http://tempuri.org/Calendarizar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaArchivoBitacora">
+      <soap:operation soapAction="http://tempuri.org/ConsultaArchivoBitacora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddArchivoBitacora">
+      <soap:operation soapAction="http://tempuri.org/AddArchivoBitacora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransformarArchivo">
+      <soap:operation soapAction="http://tempuri.org/TransformarArchivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsRecibeArchivosSoap12" type="tns:WsRecibeArchivosSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ErrDisplay">
+      <soap12:operation soapAction="http://tempuri.org/ErrDisplay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Echo">
+      <soap12:operation soapAction="http://tempuri.org/Echo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFile">
+      <soap12:operation soapAction="http://tempuri.org/SaveFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileLength">
+      <soap12:operation soapAction="http://tempuri.org/FileLength" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetError">
+      <soap12:operation soapAction="http://tempuri.org/GetError" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPathRecepcion">
+      <soap12:operation soapAction="http://tempuri.org/GetPathRecepcion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Calendarizar">
+      <soap12:operation soapAction="http://tempuri.org/Calendarizar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaArchivoBitacora">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaArchivoBitacora" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddArchivoBitacora">
+      <soap12:operation soapAction="http://tempuri.org/AddArchivoBitacora" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransformarArchivo">
+      <soap12:operation soapAction="http://tempuri.org/TransformarArchivo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsRecibeArchivos">
+    <wsdl:port name="WsRecibeArchivosSoap" binding="tns:WsRecibeArchivosSoap">
+      <soap:address location="http://forecastsap.polakgrupo.com:2013/SapForecast/WsRecibeArchivos.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsRecibeArchivosSoap12" binding="tns:WsRecibeArchivosSoap12">
+      <soap12:address location="http://forecastsap.polakgrupo.com:2013/SapForecast/WsRecibeArchivos.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

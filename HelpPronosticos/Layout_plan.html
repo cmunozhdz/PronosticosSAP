@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.0 transitional//EN">
+<HTML>
+<HEAD>
+	
+	<title>Importar Clientes</title>
+	<meta name="GENERATOR" content="OpenOffice.org 3.2  (Win32)"/>
+	<meta name="CREATED" content="0;0"/>
+	<meta name="CHANGED" content="20130806;11383800"/>
+	<meta name="KEYWORDS" content="Layout de Plan anual de ventas."/>
+	<link rel="stylesheet" type="text/css" href="theme.css"/>
+    </HEAD>
+<BODY LANG="es-MX" DIR="Ltr">
+<div id="masthead" ><img src="Images/BannerSigepro.png" alt="SiGePro"></div>
+<div id="container" >
+
+<H1> Importar plan de ventas&nbsp; del a&ntilde;o en 
+    venidero desde un archivo de csv.</H1>
+<OL>
+	<LI><p>Generar un archivo de texto .csv donde las columnas sea separadas por tabuladores; estos archivos pueden generarse desde excel o programas similares.</p></LI> 
+	<LI><p>A continuación se indica el layout del pronóstico.</p>
+    </LI>
+ 
+</OL>
+ <p>Cabecera: 
+    <br />
+    La primer linea del documento está formado por los siguientes parametros:</p>
+<table  cellspacing="0"  >
+	
+	<tr><th class= "Hdr" colspan="0" > Celda</th><th class= "Hdr" width="600" >Descripci&oacute;n.</th><th width="150" class= "Hdr">Tipo de campo.<br />
+        y
+        <br />
+        Formato</th></tr>
+	<tr><td class= "Line" colspan="0" > A1</td><td class= "Line">
+        Texto Fijo: &quot;Escenario:&quot;</td><td class= "Line">Cadenas de Texto</td></tr>
+    <tr><td class= "Line2" colspan="0" > B1</td><td class= "Line2">
+        Folio del Escenario</td><td class= "Line2">Cadenas de Texto</td></tr>
+	
+    <tr><td class= "Line" colspan="0" > C1</td><td class= "Line">
+        Texto Fijo: &quot;Es Nuevo:&quot;</td><td class= "Line">Cadenas de Texto</td></tr>
+	
+    <tr><td class= "Line2" colspan="0" > D1</td><td class= "Line2">
+        Uno de los siguientes valores:<br />
+        S : Para indicar que el escenario es nuevo por lo tanto se deberá crear.<br />
+        N: Para indicar que el escenario ya existe, esto es util cuando se quiere 
+        hacer una actualización masiva del escenario preexistente.</td><td class= "Line2">Cadenas de Texto</td></tr>
+	
+    <tr><td class= "Line" colspan="0" > E1</td><td class= "Line">
+        Vacio</td><td class= "Line">&nbsp;</td></tr>
+	
+    <tr>
+        <td class= "Line2" colspan="0" > F1</td><td class= "Line2">
+        Fecha de Inicio del Escenario</td><td class= "Line2">Fecha dd-mm-yyyy</td>
+    </tr>
+	
+    <tr><td class= "Line" colspan="0" > G1</td><td class= "Line">
+        Fecha de Termino del Escenario</td><td class= "Line">Fecha dd-mm-yyyy</td></tr>
+	
+    <tr><td class= "Line2" colspan="0" > H1</td><td class= "Line2">
+        Texto Fijo: &quot;Clave del Agente&quot;</td><td class= "Line2">Cadena de texto</td></tr>
+	 <tr><td class= "Line" colspan="0" > I1</td><td class= "Line">
+         Clave del agente responsable (asignado en SAP)</td><td class= "Line">Cadena de Texto</td></tr>
+    <tr><td class= "Line2" colspan="0" > J1</td><td class= "Line2">
+        Texto Fijo: &quot;Tipo de periodo&quot;</td><td class= "Line2">&nbsp;</td></tr>
+	<tr><td class= "Line" colspan="0" > K1<br />
+        </td><td class= "Line">
+            Indicar el tipo de periodo a utilizar de acuerdo a los siguientes valores<br />
+            W:Semanal<br />
+            M:Mensual</td><td class= "Line">Cadena de Texto</td></tr>
+	
+	<tr><td class= "Line" colspan="0" > L1</td><td class= "Line">
+        Texto Fijo:&quot;Descripción&quot;</td><td class= "Line">&nbsp;</td></tr>
+	
+	<tr><td class= "Line" colspan="0" > M1</td><td class= "Line">
+        Descripción del escenario que permita identificar la zona, negocio, vigencia 
+        etc.</td><td class= "Line">Cadena de Texto</td></tr>
+	
+</table>
+
+    <p>
+        &nbsp;</p>
+    <p>
+        Detalle :</p>
+    <p>
+        En esta sección se definen los clientes, productos&nbsp; y cantidades a 
+        pronosticar en el escenario de pronostico. de acuerdo a la siguiente definición:</p>
+    <p>
+        Cada linea del pronosticos se agregará apartir de la linea 3 y el uso de cada 
+        columna como se indica acontinuación:</p>
+    <p>
+        enCentro = 0 enCliente = 1 enProducto = 2 enFechaIni = 5
+    </p>
+<table  cellspacing="0"  >
+	
+	<tr><th class= "Hdr" colspan="0" > Columna</th><th class= "Hdr" width="600" >Descripci&oacute;n..</th><th width="150" class= "Hdr">Tipo de campo.<br />
+        y
+        <br />
+       Formato</th></tr>
+	<tr><td class= "Line" colspan="0" > A</td><td class= "Line">
+        Clave del centro</td><td class= "Line">Cadena de texto</td></tr>
+    <tr><td class= "Line2" colspan="0" > B</td><td class= "Line2">
+        Clave del cliente</td><td class= "Line2">Cadenas de Textoo</td></tr>
+	
+    <tr><td class= "Line" colspan="0" >C</td><td class= "Line">
+        Clave del producto</td><td class= "Line">Cadenas de Textoo</td></tr>
+	
+    <tr><td class= "Line2" colspan="0" >D</td><td class= "Line2">
+        Clave de la sociedad</td><td class= "Line2">Cadenas de Texto</td></tr>
+	
+    <tr><td class= "Line" colspan="0" > F</td><td class= "Line">
+        Cantidad del primer periodo</td><td class= "Line">Numerico (sin comas , 
+            comillas,etc)</td></tr>
+	
+    <tr>
+        <td class= "Line2" colspan="0" > G</td><td class= "Line2">
+        Cantidad del segundo periodo</td><td class= "Line2">
+<table  cellspacing="0"  >
+	
+    <tr><td class= "Line2">Numerico (sin comas , comillas,etc)</td></tr>
+	
+</table>
+
+        </td>
+    </tr>
+	
+    <tr><td class= "Line" colspan="0" > H</td><td class= "Line">
+        Cantidad del tercer periodo
+        <br />
+        </td><td class= "Line">
+<table  cellspacing="0"  >
+	
+    	
+    <tr><td class= "Line">Numerico (sin comas , comillas,etc)</td></tr>
+	
+
+
+  
+</table>
+
+        </td></tr>
+	
+    <tr><td class= "Line2" colspan="0" > I</td><td class= "Line2">
+        Apartir de esta columna en adelante se registraran la cantidad de los periodos 
+        faltantes hasta cerrar el ciclo.</td><td class= "Line2">Numerico (sin comas , 
+            comillas,etc)</td></tr>
+	 	
+</table>
+</div>
+    </BODY>
+</HTML>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Window Styles" value="0x800025">
+	<param name="ImageType" value="Folder">
+<param name="Font" value="Arial,8,0">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Importar Archivos">
+		<param name="ImageNumber" value="2">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Layout Clientes X Agentes">
+			<param name="Local" value="Layout_Agentes_Clientes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Importar pronostico desde un CSV">
+			<param name="Local" value="Layout_pronosticos.html">
+			<param name="URL" value="Layout_pronosticos.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Toc ">
+		<param name="Local" value="Implementa_p1.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pasos de Implementacion">
+			<param name="Local" value="PasosImplementacion.html">
+			<param name="URL" value="PasosImplementacion.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

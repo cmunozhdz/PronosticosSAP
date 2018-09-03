@@ -1,0 +1,15 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=PronosticosSap.chm
+Contents file=Table of Contents.hhc
+Default topic=PasosImplementacion.html
+Display compile progress=No
+Index file=Index.hhk
+Language=0x80a Español (México)
+
+
+[FILES]
+PasosImplementacion.html
+
+[INFOTYPES]
+
